@@ -1,0 +1,118 @@
+SELECT 
+COUNT(DEPTNO) AS DEPT
+FROM EMP;
+
+
+SELECT 
+MAX(sal)
+from EMP
+WHERE job='Analyst'
+
+
+SELECT 
+   AVG(SAL) AS 'AVG'
+FROM EMP
+WHERE DEPTNO=10
+GROUP BY DEPTNO;
+
+
+SELECT 
+   DEPTNO , COUNT(*)
+FROM EMP
+GROUP BY DEPTNO
+
+SELECT 
+   AVG(MGR) AS 'FOR MANAGERS'
+FROM EMP;
+
+
+SELECT 
+  MAX(sal)
+FROM EMP;
+
+
+SELECT 
+   MAX(comm) AS 'highest comm'
+FROM EMP;
+
+
+SELECT 
+   sum(sal) AS 'total salary'
+FROM EMP
+WHERE job='salesman'
+
+
+SELECT
+e.Hiredate , j.startdate , j.enddate ,e.ename
+from EMP e ,JOBHIST j
+WHERE e.Hiredate  BETWEEN j.startdate AND j.enddate;
+
+SELECT 
+e.empno , e.sal  , e.ename , d.Loc
+from EMP e ,DEPT d
+
+SELECT 
+e.ename , d.Loc
+FROM EMP e , DEPT d
+WHERE Loc ='chicago';
+
+
+SELECT 
+e.ename , d.Loc
+FROM EMP e , DEPT d
+WHERE d.DEPTNO = e.DEPTNO
+ORDER BY Loc;
+
+SELECT 
+e.ename ,  E.EMPNO , d.deptno , d.dname
+FROM EMP e , DEPT d
+WHERE e.deptno=d.deptno 
+
+
+select e.ename , c.ename
+from emp e , emp c
+where e.empno = c.mgr and e.HIREDATE < c.HIREDATE;
+
+
+
+
+
+SELECT 
+e.ename , d.Loc
+FROM EMP e 
+JOIN
+DEPT d
+ON (d.DEPTNO = e.DEPTNO)
+ORDER BY D.Loc;
+
+
+SELECT 
+e.ename , E.EMPNO , d.deptno , d.dname
+FROM EMP e 
+JOIN
+DEPT d
+ON (e.deptno=d.deptno)
+
+
+SELECT 
+e.ename , d.Loc
+FROM EMP e 
+  JOIN
+  DEPT d
+ON Loc ='chicago'
+ORDER BY d.Loc ;
+
+
+SELECT
+e.Hiredate , j.startdate , j.enddate ,e.ename
+from EMP e 
+JOIN
+JOBHIST j
+ON e.Hiredate  BETWEEN j.startdate AND j.enddate;
+
+
+select employee.ename AS manager , manager.ename AS emlpyee
+from emp employee 
+JOIN
+emp manager
+ON employee.empno = manager.mgr and employee.HIREDATE > manager.HIREDATE;
