@@ -1,0 +1,68 @@
+                                          HEALTH HISTORY  
+
+ 
+
+PET ID	 PET NAME 	PET TYPE  PET AGE     OWNER	             VISIT DATE	         PROCEDURE 
+
+246	       ROVER    	DOG	    12	    SAM COOK	         JAN 13/2002	 01 - RABIES VACCINATION 
+
+                                                             MAR 27/2002	 10 - EXAMINE and TREAT WOUND 
+
+                                                             APR 02/2002	 05 - HEART WORM TEST 
+
+ 
+
+298	         SPOT		DOG	    2	    TERRY KIM	        JAN 21/2002	     08 - TETANUS VACCINATION	 
+
+                                                             MAR 10/2000     05 - HEART WORM TEST 
+															 
+															 
+341	         MORRIS		CAT	    4	    SAM COOK	         JAN 23/2001     01 - RABIES VACCINATION 
+
+                                                             JAN 13/2002     01 - RABIES VACCINATION 
+   
+ 
+
+519         TWEEDY		BIRD	 2	    TERRY KIM	         APR 30/2002     20 - ANNUAL CHECK UP 
+
+                                                             APR 30/2002     12 - EYE WASH 
+															 
+															 
+
+
+
+
+
+PET INFORMATION    
+1.PET ID
+2.PET AGE
+3.PET TYPE
+4.PET NAME
+5.PET OWNER
+6.VISIT DATE
+7.PROCEDURE
+
+OWNER DETAILS 
+ owner name
+ owner ID (PK)
+ 
+ PET DETAILS
+ pet ID (PK)
+ pet name 
+ pet type Id(FK)
+ pet age
+ owner ID(FK)
+ 
+ PET TYPE DETAILS
+ pet  type ID (FK)
+ pet  type
+ 
+ 
+ VISIT Details
+ pet ID (FK)
+ visit date
+ procedure ID(FK)
+ 
+ procedure Details
+ procedure ID(PK)
+ procedure 
