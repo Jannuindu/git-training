@@ -1,0 +1,97 @@
+<html> 
+<head>
+<title> </title>
+<script type="text/javascript"> 
+
+function validate(){
+if( document.myForm.Name.value == "" )
+{ 
+alert( "Please provide your name!" ); 
+document.myForm.Name.focus() ;
+}
+else if(document.myForm.address.value== "")
+{
+alert(" Please provide your address!" );
+document.myForm.address.focus() ;
+return false;
+ } 
+ 
+}
+var text=document.getFunctionBy("validate()").innerHTML;
+alert("Thank you");
+</script> 
+</head>
+<body>
+<form action="" name="myForm" onsubmit="return(validate())">
+<h1> Task</h1><br>
+ Name:
+<select name="status"><option>
+<option value=1 >PERSON1
+<option value=2 >PERSON2
+<option value=3 >PERSON3
+</select>
+<br>
+<br>
+Taskid:
+<input type="numbers" number="num" required>
+<br>
+<br>
+
+Description:
+<input type="name" name="text" size="40" required>
+<br>
+<br>
+Status:
+<select name="status" ><option>
+<option value=1 >close
+<option value=2 >impress
+<option value=3 >cancelled
+<option value=4 >onhold
+</select>
+<br>
+<br>
+<label><b>Priority:</b></label> 
+<input type="radio" name="high">
+<label>High</label>
+<input type="radio" name="medium">
+<label>medium</label>
+<input type="radio" name="low">
+<label>low</label>
+<br>
+<br>
+Notes:
+<input type="name" name="text" size="40" required>
+<br>
+<br>
+Bookmark:
+<input type="name" name="text" required>
+<br>
+<br>
+Notes:
+<input type="name" name="text" size="40" required>
+<br>
+<br>
+Bookmark:
+<input type="name" name="text" required>
+<br>
+<br>
+OwnerId:
+<input type="number" name="num" required>
+<br>
+<br>
+CreaterId:
+<input type="num" name="num" required>
+<br>
+<br>
+CreatedOn:
+<input type="date" date="year/month/date" required>
+<br>
+<br>
+ ModifiedOn:
+<input type="date" date="year/month/date" required>
+<br>
+<br>
+<Button onclick="return(validate())"> LOGIN HERE</button>
+</form>
+</body>
+<html>
