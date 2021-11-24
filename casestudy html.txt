@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> </title>
+</head>
+<body>
+<h1> Task</h1><br>
+ Name:
+<select name="status"><option>
+<option value=1 >PERSON1
+<option value=2 >PERSON2
+<option value=3 >PERSON3
+</select>
+<br>
+<br>
+Taskid:
+<input type="numbers" number="num" required>
+<br>
+<br>
+
+Description:
+<input type="name" name="text" size="40" required>
+<br>
+<br>
+status:
+<select name="status" ><option>
+<option value=1 >close
+<option value=2 >impress
+<option value=3 >cancelled
+<option value=4 >onhold
+</select>
+<br>
+<br>
+<label><b>Priority:</b></label> 
+<input type="radio" name="high">
+<label>High</label>
+<input type="radio" name="medium">
+<label>medium</label>
+<input type="radio" name="low">
+<label>low</label>
+<br>
+<br>
+Notes:
+<input type="name" name="text" size="40" required>
+<br>
+<br>
+Bookmark:
+<input type="name" name="text" required>
+<br>
+<br>
+ownerid:
+<input type="number" name="num" required>
+<br>
+<br>
+createrid:
+<input type="num" name="num" required>
+<br>
+<br>
+createdon:
+<input type="date" date="year/month/date" required>
+<br>
+<br>
+ modifiedon:
+<input type="date" date="year/month/date" required>
+<br>
+<br>
+<Button> submit</button>
+</body>
+<html>
